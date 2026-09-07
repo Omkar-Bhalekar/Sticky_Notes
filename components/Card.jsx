@@ -9,10 +9,10 @@ function Card(props) {
     return (
         <div style={{ backgroundColor: color }} className=" relative text-black h-60 w-80 lg:h-60 lg:w-50 rounded-2xl mx-6 my-6">
             <div className="flex flex-row ml-2  justify-between mr-2 mt-2">
-                <h3 className="text-xl ml-2 font-medium">{props.title}</h3>
+                <h3 className="text-xl ml-2 font-medium mt-2">{props.title}</h3>
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="text-xl hover: border-amber-100  font-extrabold px-3 py-1 "
+                    className="text-xl   font-extrabold px-3 py-1 mt-2 "
                 >
                     ⋮
                 </button>
@@ -45,10 +45,10 @@ function Card(props) {
 
 
             </div>
-            <div className=" flex flex-col  justify-between ml-4 mt-3 text-s font-semibold mb-7">
-
-                <h4 className=" text-[16px] mb-2 mt-4 font-medium">{props.description}</h4>
-
+            <div className="px-4 mt-10 h-[150px] overflow-hidden">
+                <h4 className="font-semibold break-words">
+                    {props.description}
+                </h4>
             </div>
         </div>
     )
