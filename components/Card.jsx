@@ -23,12 +23,12 @@ function Card(props) {
                         <div className="flex flex-row">
                             <div onClick={() => { setColor("#fee685") }} className=" h-8 w-8 bg-amber-200 cursor-pointer"></div>
                             <div onClick={() => { setColor("#fb64b6") }} className=" h-8 w-8 bg-pink-400 cursor-pointer"></div>
-                           
+
                             <div
                                 onClick={() => { setColor("#93c5fd") }}
                                 className="h-8 w-8 bg-blue-300 cursor-pointer"
-                            ></div> 
-                            
+                            ></div>
+
                             <div
                                 onClick={() => { setColor("#86efac") }}
                                 className="h-8 w-8 bg-green-300 cursor-pointer"
@@ -39,14 +39,14 @@ function Card(props) {
                                 className="h-8 w-8 bg-violet-300 cursor-pointer"
                             ></div>
                         </div>
-                        <button onClick={() => props.deleteNote(props.index)} className="bg-gray-900 w-full text-white px-4">Delete</button>
+                        <button onClick={() => props.deleteNote(props.id)} className="bg-gray-900 w-full text-white px-4">Delete</button>
                     </div>
                 )}
 
 
             </div>
-            <div className="px-4 mt-10 h-[150px] overflow-hidden">
-                <h4 className="font-semibold break-words">
+            <div className="px-4 mt-10 h-37.5 overflow-hidden">
+                <h4 className="font-semibold wrap-break-word">
                     {props.description}
                 </h4>
             </div>
